@@ -1,0 +1,27 @@
+NOME TABELLA: CONCESSIONARIA AUTO-USATE
+
+
+
+auto_ID: BIGINT primary_key AUTO_INCREMENT
+n_telaio: VARCHAR(17) NOT_NULL
+marca_auto: VARCHAR(25) NOT_NULL
+modello_auto: VARCHAR(35) NOT_NULL
+allestimento_auto: VARCHAR(15) 
+tipoligia: VARCHAR(10) NOT_NULL
+colore: VARCHAR(15)
+dettagli_agg: TEXT
+
+chilometri: MEDIUMINT UNSIGNED NOT_NULL
+anno_imm: YEAR NOT_NULL
+cambio_autom: TINYINT NOT NULL DEFAULT(0)
+carburante: VARCHAR(8)
+euro_tax:  FLOAT(8, 2) NOT_NULL
+prezzo: FLOAT(8, 2) NOT_NULL
+
+creata_il: TIMESTAMP
+agg_il: TIMESTAMP
+
+
+
+Esercizio di oggi: nome repo: db-first
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
